@@ -1,9 +1,128 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="a22a5f5a-faee-4f41-b8cf-728d223b5deb" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/api/api.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/CurrentWeather/CurrentWeather.jsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/CurrentWeather/CurrentWeather.module.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/DailyWeather/DailyWeather.jsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/DailyWeather/DailyWeather.module.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/HourlyWeather/HourlyWeather.jsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/HourlyWeather/HourlyWeather.module.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/common/Image.jsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/redux/rootReducer.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/redux/store.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/redux/testReducer.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/App.test.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/index.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/logo.svg" beforeDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="JavaScript File" />
+        <option value="CSS File" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
   <component name="ProjectId" id="1cteXKwO6Q9UkDyNw1wlidrSKiR" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showExcludedFiles" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="list.type.of.created.stylesheet" value="CSS" />
+    <property name="node.js.detected.package.eslint" value="true" />
+    <property name="node.js.path.for.package.eslint" value="project" />
+    <property name="node.js.selected.package.eslint" value="(autodetect)" />
     <property name="nodejs_interpreter_path" value="node" />
+    <property name="nodejs_package_manager_path" value="npm" />
     <property name="settings.editor.selected.configurable" value="preferences.lookFeel" />
+  </component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\Coding\TestWork\weather-app\src\components\common" />
+      <recent name="D:\Coding\TestWork\weather-app\src\components\HourlyWeather" />
+      <recent name="D:\Coding\TestWork\weather-app\src\components\DailyWeather" />
+      <recent name="D:\Coding\TestWork\weather-app\src\components\CurrentWeather" />
+    </key>
+  </component>
+  <component name="RunManager" selected="npm.npm start">
+    <configuration name="Debug Application" type="JavascriptDebugType" uri="http://localhost:3000">
+      <method v="2" />
+    </configuration>
+    <configuration name="npm start" type="js.build_tools.npm">
+      <package-json value="$PROJECT_DIR$/package.json" />
+      <command value="run" />
+      <scripts>
+        <script value="start" />
+      </scripts>
+      <node-interpreter value="project" />
+      <envs />
+      <method v="2" />
+    </configuration>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="a22a5f5a-faee-4f41-b8cf-728d223b5deb" name="Default Changelist" comment="" />
+      <created>1591352354716</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1591352354716</updated>
+      <workItem from="1591352355962" duration="30789000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="516" y="497" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1591373537374">
+      <screen x="0" y="46" width="1920" height="1034" />
+    </state>
+    <state x="516" y="497" key="#com.intellij.fileTypes.FileTypeChooser/0.46.1920.1034@0.46.1920.1034" timestamp="1591373537374" />
+    <state x="457" y="221" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1591352728134">
+      <screen x="0" y="46" width="1920" height="1034" />
+    </state>
+    <state x="457" y="221" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.46.1920.1034@0.46.1920.1034" timestamp="1591352728134" />
+    <state width="1083" height="132" key="GridCell.Tab.0.bottom" timestamp="1591389342831">
+      <screen x="0" y="46" width="1920" height="1034" />
+    </state>
+    <state width="1083" height="132" key="GridCell.Tab.0.bottom/0.46.1920.1034@0.46.1920.1034" timestamp="1591389342831" />
+    <state width="1083" height="132" key="GridCell.Tab.0.center" timestamp="1591389342831">
+      <screen x="0" y="46" width="1920" height="1034" />
+    </state>
+    <state width="1083" height="132" key="GridCell.Tab.0.center/0.46.1920.1034@0.46.1920.1034" timestamp="1591389342831" />
+    <state width="1083" height="132" key="GridCell.Tab.0.left" timestamp="1591389342831">
+      <screen x="0" y="46" width="1920" height="1034" />
+    </state>
+    <state width="1083" height="132" key="GridCell.Tab.0.left/0.46.1920.1034@0.46.1920.1034" timestamp="1591389342831" />
+    <state width="1083" height="132" key="GridCell.Tab.0.right" timestamp="1591389342831">
+      <screen x="0" y="46" width="1920" height="1034" />
+    </state>
+    <state width="1083" height="132" key="GridCell.Tab.0.right/0.46.1920.1034@0.46.1920.1034" timestamp="1591389342831" />
   </component>
 </project>
