@@ -2,27 +2,20 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="a22a5f5a-faee-4f41-b8cf-728d223b5deb" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/api/api.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/CurrentWeather/CurrentWeather.jsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/CurrentWeather/CurrentWeather.module.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/DailyWeather/DailyWeather.jsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/DailyWeather/DailyWeather.module.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/HourlyWeather/HourlyWeather.jsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/HourlyWeather/HourlyWeather.module.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/common/Image.jsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/redux/rootReducer.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/redux/store.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/redux/testReducer.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/public/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/App.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/App.test.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/index.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/CurrentWeather/CurrentWeather.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/CurrentWeather/CurrentWeather.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/CurrentWeather/CurrentWeather.module.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/CurrentWeather/CurrentWeather.module.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/DailyWeather/DailyWeather.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/DailyWeather/DailyWeather.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/DailyWeather/DailyWeather.module.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/DailyWeather/DailyWeather.module.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/HourlyWeather/HourlyWeather.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/HourlyWeather/HourlyWeather.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/HourlyWeather/HourlyWeather.module.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/HourlyWeather/HourlyWeather.module.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/logo.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/redux/rootReducer.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/redux/rootReducer.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -92,12 +85,25 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1591352354716</updated>
-      <workItem from="1591352355962" duration="30789000" />
+      <workItem from="1591352355962" duration="30912000" />
+      <workItem from="1591436721246" duration="3338000" />
     </task>
+    <task id="LOCAL-00001" summary="first commit">
+      <created>1591389367581</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1591389367581</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="first commit" />
+    <option name="LAST_COMMIT_MESSAGE" value="first commit" />
   </component>
   <component name="WindowStateProjectService">
     <state x="516" y="497" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1591373537374">
@@ -108,21 +114,25 @@
       <screen x="0" y="46" width="1920" height="1034" />
     </state>
     <state x="457" y="221" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.46.1920.1034@0.46.1920.1034" timestamp="1591352728134" />
-    <state width="1083" height="132" key="GridCell.Tab.0.bottom" timestamp="1591389342831">
+    <state x="908" y="248" key="CommitChangelistDialog2" timestamp="1591389365617">
       <screen x="0" y="46" width="1920" height="1034" />
     </state>
-    <state width="1083" height="132" key="GridCell.Tab.0.bottom/0.46.1920.1034@0.46.1920.1034" timestamp="1591389342831" />
-    <state width="1083" height="132" key="GridCell.Tab.0.center" timestamp="1591389342831">
+    <state x="908" y="248" key="CommitChangelistDialog2/0.46.1920.1034@0.46.1920.1034" timestamp="1591389365617" />
+    <state width="1083" height="132" key="GridCell.Tab.0.bottom" timestamp="1591436737316">
       <screen x="0" y="46" width="1920" height="1034" />
     </state>
-    <state width="1083" height="132" key="GridCell.Tab.0.center/0.46.1920.1034@0.46.1920.1034" timestamp="1591389342831" />
-    <state width="1083" height="132" key="GridCell.Tab.0.left" timestamp="1591389342831">
+    <state width="1083" height="132" key="GridCell.Tab.0.bottom/0.46.1920.1034@0.46.1920.1034" timestamp="1591436737316" />
+    <state width="1083" height="132" key="GridCell.Tab.0.center" timestamp="1591436737316">
       <screen x="0" y="46" width="1920" height="1034" />
     </state>
-    <state width="1083" height="132" key="GridCell.Tab.0.left/0.46.1920.1034@0.46.1920.1034" timestamp="1591389342831" />
-    <state width="1083" height="132" key="GridCell.Tab.0.right" timestamp="1591389342831">
+    <state width="1083" height="132" key="GridCell.Tab.0.center/0.46.1920.1034@0.46.1920.1034" timestamp="1591436737316" />
+    <state width="1083" height="132" key="GridCell.Tab.0.left" timestamp="1591436737315">
       <screen x="0" y="46" width="1920" height="1034" />
     </state>
-    <state width="1083" height="132" key="GridCell.Tab.0.right/0.46.1920.1034@0.46.1920.1034" timestamp="1591389342831" />
+    <state width="1083" height="132" key="GridCell.Tab.0.left/0.46.1920.1034@0.46.1920.1034" timestamp="1591436737315" />
+    <state width="1083" height="132" key="GridCell.Tab.0.right" timestamp="1591436737316">
+      <screen x="0" y="46" width="1920" height="1034" />
+    </state>
+    <state width="1083" height="132" key="GridCell.Tab.0.right/0.46.1920.1034@0.46.1920.1034" timestamp="1591436737316" />
   </component>
 </project>

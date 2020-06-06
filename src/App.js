@@ -5,10 +5,10 @@ import DailyWeather from "./components/DailyWeather/DailyWeather";
 import HourlyWeather from "./components/HourlyWeather/HourlyWeather";
 
 function App() {
-    return <>
+    return <div>
         <CurrentWeather />
         <DailyWeather />
-    </>
+    </div>
 }
 
 export default App;

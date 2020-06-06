@@ -1,5 +1,6 @@
 import React from 'react';
 import {useSelector} from "react-redux";
+import Slider from "react-slick";
 import Image from "../common/Image";
 import styles from "./DailyWeather.module.css"
 import thermometer from "../../assets/images/thermometer.svg"
@@ -13,15 +14,18 @@ import uv from "../../assets/images/uv.svg"
 
 function DailyWeather() {
     const daily = useSelector(state => state.daily)
-    console.log(daily)
-
     const days = daily.data.map(d => <DayWeather {...d}/>)
 
-    return (
-        <div className={styles.wrapper}>
-            {days}
-        </div>
-    );
+    const sliderSetting = {
+        infinite: false,
+        speed: 250,
+        slidesToShow: 5,
+        slidesToScroll: 1,
+    }
+
+    return <Slider {...sliderSetting}>
+        {days}
+    </Slider>
 }
 
 function DayWeather(props) {

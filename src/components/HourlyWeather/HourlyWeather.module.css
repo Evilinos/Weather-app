@@ -1,7 +1,3 @@
-.hourlyWrapper {
-    margin-top: 1rem;
-    display: flex;
-}
 .hourWrapper {
     display: flex;
     flex-direction: column;

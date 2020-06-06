@@ -1,16 +1,26 @@
 import React from "react";
 import {useSelector} from "react-redux";
+import Slider from "react-slick";
 import Image from "../common/Image";
 import styles from './HourlyWeather.module.css'
 
 const HourlyWeather = (props) => {
     const hourly = useSelector(state => state.hourly)
 
-    const hours = hourly.data.map(h => <HourWeather {...h} key={h.datetime} />)
+    const hours = hourly.data.map(h => <HourWeather {...h} key={h.datetime}/>)
 
-    return <div className={styles.hourlyWrapper}>
+    const sliderSetting = {
+        infinite: false,
+        speed: 250,
+        slidesToShow: 10,
+        slidesToScroll: 1,
+    }
+
+
+    return <Slider {...sliderSetting}>
         {hours}
-    </div>
+    </Slider>
+
 }
 
 const HourWeather = (props) => {

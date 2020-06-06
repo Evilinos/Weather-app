@@ -11,9 +11,9 @@ import HourlyWeather from "../HourlyWeather/HourlyWeather";
 function CurrentWeather() {
     const current = useSelector(state => state.current)
 
-    return <div className={styles.currentWrapper}>
+    return <div className={styles.mainWrapper}>
         <div className={styles.location}>{current.country_code}, {current.city_name} <br/> {current.datetime}</div>
-        <div>
+        <div className={styles.currentWrapper}>
             <div className={styles.currentValue}>
                 <span>{current.temp}°</span>
                 <Image icon={current.weather.icon}/>
