@@ -1,8 +1,4 @@
-import {APIgetCurrentWeather, APIgetDailyWeather, APIgetHourlyWeather} from "../api/api";
-
-const SET_CURRENT_WEATHER_DATA = 'SET_CURRENT_WEATHER_DATA'
-const SET_DAILY_WEATHER_DATA = 'SET_DAILY_WEATHER_DATA'
-const SET_HOURLY_WEATHER_DATA = 'SET_HOURLY_WEATHER_DATA'
+import {SET_CURRENT_WEATHER_DATA, SET_DAILY_WEATHER_DATA, SET_HOURLY_WEATHER_DATA} from "./types";
 
 const initialState = {
     current: {
@@ -874,47 +870,19 @@ const initialState = {
             },
         ],
     }
-}
-
+};
 
 const rootReducer = (state = initialState, action) => {
     switch (action.type) {
         case SET_CURRENT_WEATHER_DATA:
-            return {...state, current: action.payload}
+            return {...state, current: action.payload};
         case SET_DAILY_WEATHER_DATA:
-            return {...state, daily: action.payload}
+            return {...state, daily: action.payload};
         case SET_HOURLY_WEATHER_DATA:
-            return {...state, hourly: action.payload}
+            return {...state, hourly: action.payload};
         default:
             return state
     }
-}
-
-export const setCurrentWeatherData = (data) => ({type: SET_CURRENT_WEATHER_DATA, payload: data})
-export const setDailyWeatherData = (data) => ({type: SET_DAILY_WEATHER_DATA, payload: data})
-
-export const getCurrentWeatherData = () => async (dispatch) => {
-    let response = await APIgetCurrentWeather('RU', 'Moscow')
-    if (response.status === 200) {
-        dispatch(setCurrentWeatherData(response.data.data[0]))
-    }
-}
-
-export const getDailyWeatherData = () => async (dispatch) => {
-    let response = await APIgetDailyWeather('RU', 'Moscow')
-    if (response.status === 200) {
-        dispatch(setDailyWeatherData(response.data))
-    }
-}
-
-export const getHourlyWeatherData = () => async (dispatch) => {
-    let response = await APIgetHourlyWeather('RU', 'Moscow')
-    if (response.status === 200) {
-        dispatch(setDailyWeatherData(response.data))
-        debugger
-    }
-}
-
-
+};
 
 export default rootReducer

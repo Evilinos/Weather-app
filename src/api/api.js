@@ -8,7 +8,7 @@ const instance = axios.create ({
 
 
 export const APIgetCurrentWeather = (country, city) => {
-    //return instance.get(`current?city=${city}&country=${country}${apiKey}`)
+    return instance.get(`current?city=${city}&country=${country}${apiKey}`)
 }
 
 export const APIgetDailyWeather = (country, city) => {

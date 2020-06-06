@@ -1,0 +1,70 @@
+.mainWrapper {
+    background-image: url("../../../assets/images/background.jpg");
+    border: 2px solid rgba(211, 211, 211, 0.1);
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-position: 0 -25px;
+    width: 800px;
+    text-align: center;
+    -webkit-border-radius: 20px;
+    -moz-border-radius: 20px;
+    border-radius: 20px;
+    padding: 2rem;
+    margin-bottom: 1rem;
+    font-weight: 500;
+    font-size: 20px;
+}
+.currentWrapper {
+    margin-bottom: 1rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.currentValue {
+    display: flex;
+    align-items: center;
+}
+
+.currentValue span {
+    font-size: 48px;
+    font-weight: 900;
+}
+.values {
+    display: flex;
+    flex-direction: row;
+}
+
+.wind, .humidity, .pressure{
+    margin-right: 2rem;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.wind img, .humidity img, .pressure img {
+    width: 20px;
+    height: 20px;
+}
+
+.wind span {
+    margin-right: .5rem;
+}
+.wind img:first-child {
+    margin-right: .5rem
+}
+.wind img:last-child {
+    width: 14px;
+    height: 14px;
+}
+
+.humidity img{
+    margin-right: .5rem;
+    width: 20px;
+    height: 20px;
+}
+.pressure img {
+    margin-right: .5rem;
+}
+
+

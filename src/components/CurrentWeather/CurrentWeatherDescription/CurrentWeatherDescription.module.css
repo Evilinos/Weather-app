@@ -1,0 +1,31 @@
+.wrapper {
+    background-image: url("../../../assets/images/background.jpg");
+    border: 2px solid rgba(211, 211, 211, 0.1);
+    background-size: 300%;
+    background-repeat: no-repeat;
+    background-position: 0 0px;
+    -webkit-border-radius: 20px;
+    -moz-border-radius: 20px;
+    border-radius: 20px;
+    padding: 1rem;
+    margin: 0 1rem 1rem 2rem;
+    width: 300px;
+    font-size: 22px;
+}
+
+.wrapper > div {
+     display: flex;
+     flex-direction: column;
+     margin-bottom: .5rem;
+ }
+
+.wrapper > div span {
+    display: flex;
+    flex-direction: row;
+    margin-bottom: .25rem;
+}
+
+.wrapper > div img {
+    height: 25px;
+    margin-right: .5rem;
+}

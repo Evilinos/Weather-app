@@ -1,11 +1,14 @@
-.slick-next {
-}
-
 .slick-arrow:before {
   color: black;
 }
 
 #root {
   margin: 2.5rem;
+}
+
+body {
+  background-image: url("./assets/images/MainBackground.jpg");
+  background-repeat: no-repeat;
+  background-size: 100%;
 }
 
