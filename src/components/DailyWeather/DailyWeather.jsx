@@ -12,10 +12,11 @@ import sunrise from "../../assets/images/sunrise.svg"
 import sunset from "../../assets/images/sunset.svg"
 import uv from "../../assets/images/uv.svg"
 import {setMonth} from "../common/setMonth";
+import Preloader from "../common/Preloader";
 
 function DailyWeather() {
-    const daily = useSelector(state => state.daily);
-    const days = daily.data.map(d => <DayWeather {...d}/>);
+    const data = useSelector(state => state.daily);
+    const days = data.data.map(d => <DayWeather {...d}/>);
 
     const sliderSetting = {
         infinite: false,
@@ -23,7 +24,8 @@ function DailyWeather() {
         slidesToShow: 5,
         slidesToScroll: 1,
     };
-    console.log(daily.data[0].valid_date)
+
+    if (data.isFetching) return <Preloader />
 
     return <Slider {...sliderSetting}>
         {days}
@@ -32,17 +34,19 @@ function DailyWeather() {
 
 function DayWeather(props) {
 
+    // Sunrise time
     let sunriseTimestamp = new Date(props.sunrise_ts * 1000);
-    let sunriseMinutes = sunriseTimestamp.getMinutes().toString()
-    let sunriseMinutesCheck = sunriseTimestamp.getMinutes().length < 2 ? `0${sunriseMinutes}` : sunriseMinutes
+    let sunriseMinutes = sunriseTimestamp.getMinutes().toString();
+    let sunriseMinutesCheck = sunriseTimestamp.getMinutes().length < 2 ? `0${sunriseMinutes}` : sunriseMinutes;
     let sunriseTime = `${sunriseTimestamp.getHours()}:${sunriseMinutesCheck}`;
 
+    // Sunset time
     let sunsetTimestamp = new Date(props.sunset_ts * 1000);
-    let sunsetMinutes = sunsetTimestamp.getMinutes().toString()
-    let sunsetMinutesCheck = sunsetMinutes.length < 2 ? `0${sunsetMinutes}` : sunsetMinutes
+    let sunsetMinutes = sunsetTimestamp.getMinutes().toString();
+    let sunsetMinutesCheck = sunsetMinutes.length < 2 ? `0${sunsetMinutes}` : sunsetMinutes;
     let sunsetTime = `${sunsetTimestamp.getHours()}:${sunsetMinutesCheck}`;
 
-    let date = props.valid_date.split('-')
+    let date = props.valid_date.split('-');
 
     return <div className={styles.day}>
         <div>{`${date[0]} ${setMonth(date[1])} ${date[2]}`}</div>

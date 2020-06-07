@@ -8,6 +8,7 @@ import humidity from "../../assets/images/water.svg"
 import pressure from "../../assets/images/barometer.svg"
 import HourlyWeather from "./HourlyWeather/HourlyWeather";
 import {setMonth} from "../common/setMonth";
+import Preloader from "../common/Preloader";
 
 function CurrentWeatherCard() {
     const data = useSelector(state => state.current);
@@ -22,14 +23,16 @@ function CurrentWeatherCard() {
     const minutesCheck = minutes.length < 2 ? `0${minutes}` : minutes;
     const time = +hours-1 + ":" + minutesCheck;
 
+    // if (data.isFetching) return <div className={styles.mainWrapper}><Preloader /></div>;
+
 
     return <div className={styles.mainWrapper}>
         <div>
             {data.country_code}, {data.city_name} <br/>
             <span>{`${year} ${setMonth(month)} ${day}, ${time}`}</span>
         </div>
-        <div className={styles.dataWrapper}>
-            <div className={styles.dataValue}>
+        <div className={styles.currentWrapper}>
+            <div className={styles.currentValue}>
                 <span>{data.temp}°</span>
                 <Image icon={data.weather.icon}/>
                 <div>

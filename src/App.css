@@ -3,7 +3,7 @@
 }
 
 #root {
-  margin: 2.5rem 2.5rem 0 2.5rem;
+  padding: 2.5rem 2.5rem 0 2.5rem;
   width: 1820px;
 }
 
@@ -11,6 +11,7 @@ body {
   background-image: url("./assets/images/MainBackground.jpg");
   background-repeat: no-repeat;
   background-size: 100%;
+  width: 1830px;
 }
 
 .row {
@@ -21,5 +22,5 @@ body {
 footer {
   text-align: center;
   font-size: 24px;
-  margin-top: .25rem;
+  margin-top: 1rem;
 }

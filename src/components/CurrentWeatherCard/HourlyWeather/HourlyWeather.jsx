@@ -3,11 +3,12 @@ import {useSelector} from "react-redux";
 import Slider from "react-slick";
 import Image from "../../common/Image";
 import styles from './HourlyWeather.module.css'
+import Preloader from "../../common/Preloader";
 
 const HourlyWeather = () => {
-    const hourly = useSelector(state => state.hourly);
+    const data = useSelector(state => state.hourly);
 
-    const hours = hourly.data.map(h => <HourWeather {...h} key={h.datetime}/>);
+    const hours = data.data.map(h => <HourWeather {...h} key={h.datetime}/>);
 
     const sliderSetting = {
         infinite: false,
@@ -16,6 +17,8 @@ const HourlyWeather = () => {
         slidesToScroll: 1,
     };
 
+
+    if (data.isFetching) return <Preloader />
 
     return <Slider {...sliderSetting}>
         {hours}

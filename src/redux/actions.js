@@ -1,4 +1,9 @@
-import {SET_CURRENT_WEATHER_DATA, SET_DAILY_WEATHER_DATA, SET_HOURLY_WEATHER_DATA} from "./types";
+import {
+    SET_CURRENT_WEATHER_DATA,
+    SET_DAILY_WEATHER_DATA,
+    SET_HOURLY_WEATHER_DATA,
+    TOGGLE_CURRENT_WEATHER_FETCHING, TOGGLE_DAILY_WEATHER_FETCHING, TOGGLE_HOURLY_WEATHER_FETCHING
+} from "./types";
 import {APIgetCurrentWeather, APIgetDailyWeather, APIgetHourlyWeather} from "../api/api";
 
 // actions creators
@@ -6,6 +11,9 @@ export const setCurrentWeatherData = (data) => ({type: SET_CURRENT_WEATHER_DATA,
 export const setDailyWeatherData = (data) => ({type: SET_DAILY_WEATHER_DATA, payload: data});
 export const setHourlyWeatherData = (data) => ({type: SET_HOURLY_WEATHER_DATA, payload: data});
 
+export const toggleCurrentFetching = (isFetching) => ({type: TOGGLE_CURRENT_WEATHER_FETCHING, payload: isFetching});
+export const toggleDailyFetching = (isFetching) => ({type: TOGGLE_DAILY_WEATHER_FETCHING, payload: isFetching});
+export const toggleHourlyFetching = (isFetching) => ({type: TOGGLE_HOURLY_WEATHER_FETCHING, payload: isFetching});
 
 // thunks
 export const getWeather = (formData) => (dispatch) => {
@@ -45,22 +53,28 @@ export const getWeather = (formData) => (dispatch) => {
 };
 
 export const getCurrentWeatherData = (request) => async (dispatch) => {
+    dispatch(toggleCurrentFetching(true))
     let response = await APIgetCurrentWeather(request);
     if (response.status === 200) {
        dispatch(setCurrentWeatherData(response.data.data[0]))
     }
+    dispatch(toggleCurrentFetching(false))
 };
 
 export const getDailyWeatherData = (request) => async (dispatch) => {
+    dispatch(toggleDailyFetching(true))
     let response = await APIgetDailyWeather(request);
     if (response.status === 200) {
         dispatch(setDailyWeatherData(response.data))
     }
+    dispatch(toggleDailyFetching(false))
 };
 
 export const getHourlyWeatherData = (request) => async (dispatch) => {
+    dispatch(toggleHourlyFetching(true))
     let response = await APIgetHourlyWeather(request);
     if (response.status === 200) {
         dispatch(setHourlyWeatherData(response.data));
     }
+    dispatch(toggleHourlyFetching(false))
 };
