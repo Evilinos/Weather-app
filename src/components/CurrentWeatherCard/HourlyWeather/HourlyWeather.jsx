@@ -1,7 +1,7 @@
 import React from "react";
 import {useSelector} from "react-redux";
 import Slider from "react-slick";
-import Image from "../../../common/Image";
+import Image from "../../common/Image";
 import styles from './HourlyWeather.module.css'
 
 const HourlyWeather = () => {
@@ -31,7 +31,7 @@ const HourWeather = (props) => {
     return <div className={styles.hourWrapper}>
         <div>{time}</div>
         <Image icon={props.weather.icon}/>
-        <div>{props.temp}°</div>
+        <div>{Math.round(props.temp)}°</div>
     </div>
 };
 

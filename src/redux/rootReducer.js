@@ -340,7 +340,8 @@ const initialState = {
                 wind_cdir: 'SSE',
                 rh: 77,
                 pod: 'd',
-                timestamp_utc: '2020-06-05T17:00:00',
+                timestamp_utc: '2020-06-06T15:00:00',
+                timestamp_local: '2020-03-06T12:00:00',
                 pres: 992.28,
                 solar_rad: 18.205,
                 ozone: 362.968,
@@ -350,7 +351,6 @@ const initialState = {
                     description: 'Overcast clouds'
                 },
                 wind_gust_spd: 8.76872,
-                timestamp_local: '2020-06-05T20:00:00',
                 snow_depth: 0,
                 clouds: 100,
                 ts: 1591376400,
