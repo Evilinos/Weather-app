@@ -1,4 +1,5 @@
 import {
+    REQUEST_ERROR,
     SET_CURRENT_WEATHER_DATA,
     SET_DAILY_WEATHER_DATA,
     SET_HOURLY_WEATHER_DATA,
@@ -15,10 +16,11 @@ export const toggleCurrentFetching = (isFetching) => ({type: TOGGLE_CURRENT_WEAT
 export const toggleDailyFetching = (isFetching) => ({type: TOGGLE_DAILY_WEATHER_FETCHING, payload: isFetching});
 export const toggleHourlyFetching = (isFetching) => ({type: TOGGLE_HOURLY_WEATHER_FETCHING, payload: isFetching});
 
+export const requestError = (error) => ({type: REQUEST_ERROR, error });
+
 // thunks
 export const getWeather = (formData) => (dispatch) => {
     let request;
-
     let {cityName, country, lat, lon,postalCode, cityId, stationId} = formData;
     if (cityName) {
         request = `city=${cityName}`;
@@ -53,28 +55,34 @@ export const getWeather = (formData) => (dispatch) => {
 };
 
 export const getCurrentWeatherData = (request) => async (dispatch) => {
-    dispatch(toggleCurrentFetching(true))
+    dispatch(toggleCurrentFetching(true));
     let response = await APIgetCurrentWeather(request);
     if (response.status === 200) {
        dispatch(setCurrentWeatherData(response.data.data[0]))
+    } else {
+        dispatch(requestError('Request failed: no city data'))
     }
     dispatch(toggleCurrentFetching(false))
 };
 
 export const getDailyWeatherData = (request) => async (dispatch) => {
-    dispatch(toggleDailyFetching(true))
+    dispatch(toggleDailyFetching(true));
     let response = await APIgetDailyWeather(request);
     if (response.status === 200) {
         dispatch(setDailyWeatherData(response.data))
+    } else {
+        dispatch(requestError('Request failed: no city data'))
     }
     dispatch(toggleDailyFetching(false))
 };
 
 export const getHourlyWeatherData = (request) => async (dispatch) => {
-    dispatch(toggleHourlyFetching(true))
+    dispatch(toggleHourlyFetching(true));
     let response = await APIgetHourlyWeather(request);
     if (response.status === 200) {
         dispatch(setHourlyWeatherData(response.data));
+    } else {
+        dispatch(requestError('Request failed: no city data'))
     }
     dispatch(toggleHourlyFetching(false))
 };

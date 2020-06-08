@@ -1,4 +1,5 @@
 import {
+    REQUEST_ERROR,
     SET_CURRENT_WEATHER_DATA,
     SET_DAILY_WEATHER_DATA,
     SET_HOURLY_WEATHER_DATA,
@@ -6,6 +7,7 @@ import {
 } from "./types";
 
 const initialState = {
+    error: null,
     current: {
         rh: 71,
         pod: "d",
@@ -891,6 +893,8 @@ const rootReducer = (state = initialState, action) => {
             return {...state, daily: {...state.daily, isFetching: action.payload}};
         case TOGGLE_HOURLY_WEATHER_FETCHING:
             return {...state, hourly: {...state.hourly, isFetching: action.payload}};
+        case REQUEST_ERROR:
+            return {...state, error: action.error};
         default:
             return state
     }

@@ -10,7 +10,7 @@ import HourlyWeather from "./HourlyWeather/HourlyWeather";
 import {setMonth} from "../common/setMonth";
 import Preloader from "../common/Preloader";
 
-function CurrentWeatherCard() {
+const CurrentWeatherCard = () => {
     const data = useSelector(state => state.current);
 
     const localDate = useSelector(state => state.daily.data[0].valid_date);
@@ -23,8 +23,7 @@ function CurrentWeatherCard() {
     const minutesCheck = minutes.length < 2 ? `0${minutes}` : minutes;
     const time = +hours-1 + ":" + minutesCheck;
 
-    // if (data.isFetching) return <div className={styles.mainWrapper}><Preloader /></div>;
-
+    if (data.isFetching) return <div className={styles.mainWrapper}><Preloader /></div>;
 
     return <div className={styles.mainWrapper}>
         <div>
@@ -58,6 +57,6 @@ function CurrentWeatherCard() {
         </div>
         <HourlyWeather/>
     </div>
-}
+};
 
 export default CurrentWeatherCard;

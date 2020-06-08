@@ -14,7 +14,7 @@ import uv from "../../assets/images/uv.svg"
 import {setMonth} from "../common/setMonth";
 import Preloader from "../common/Preloader";
 
-function DailyWeather() {
+const DailyWeather = () => {
     const data = useSelector(state => state.daily);
     const days = data.data.map(d => <DayWeather {...d}/>);
 
@@ -25,26 +25,26 @@ function DailyWeather() {
         slidesToScroll: 1,
     };
 
-    if (data.isFetching) return <Preloader />
+    if (data.isFetching) return <Preloader/>;
 
     return <Slider {...sliderSetting}>
         {days}
     </Slider>
-}
+};
 
-function DayWeather(props) {
+const DayWeather = (props) => {
 
     // Sunrise time
     let sunriseTimestamp = new Date(props.sunrise_ts * 1000);
-    let sunriseMinutes = sunriseTimestamp.getMinutes().toString();
-    let sunriseMinutesCheck = sunriseTimestamp.getMinutes().length < 2 ? `0${sunriseMinutes}` : sunriseMinutes;
-    let sunriseTime = `${sunriseTimestamp.getHours()}:${sunriseMinutesCheck}`;
+    let sunriseMinutesNumber = sunriseTimestamp.getMinutes().toString();
+    let sunriseMinutes = sunriseTimestamp.getMinutes().length < 2 ? `0${sunriseMinutesNumber}` : sunriseMinutesNumber;
+    let sunriseTime = `${sunriseTimestamp.getHours()}:${sunriseMinutes}`;
 
     // Sunset time
     let sunsetTimestamp = new Date(props.sunset_ts * 1000);
-    let sunsetMinutes = sunsetTimestamp.getMinutes().toString();
-    let sunsetMinutesCheck = sunsetMinutes.length < 2 ? `0${sunsetMinutes}` : sunsetMinutes;
-    let sunsetTime = `${sunsetTimestamp.getHours()}:${sunsetMinutesCheck}`;
+    let sunsetMinutesNumber = sunsetTimestamp.getMinutes().toString();
+    let sunsetMinutes = sunsetMinutesNumber.length < 2 ? `0${sunsetMinutesNumber}` : sunsetMinutesNumber;
+    let sunsetTime = `${sunsetTimestamp.getHours()}:${sunsetMinutes}`;
 
     let date = props.valid_date.split('-');
 
@@ -79,7 +79,6 @@ function DayWeather(props) {
             </div>
         </div>
     </div>
-
-}
+};
 
 export default DailyWeather;

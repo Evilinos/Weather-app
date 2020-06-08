@@ -1,15 +1,18 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="a22a5f5a-faee-4f41-b8cf-728d223b5deb" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/components/common/Preloader.jsx" afterDir="false" />
+    <list default="true" id="a22a5f5a-faee-4f41-b8cf-728d223b5deb" name="Default Changelist" comment="Final version">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/App.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/CurrentWeatherCard/CurrentWeatherCard.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/CurrentWeatherCard/CurrentWeatherCard.jsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/CurrentWeatherCard/HourlyWeather/HourlyWeather.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/CurrentWeatherCard/HourlyWeather/HourlyWeather.jsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/CurrentWeatherDescription/CurrentWeatherDescription.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/CurrentWeatherDescription/CurrentWeatherDescription.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/CurrentWeatherDescription/CurrentWeatherDescription.module.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/CurrentWeatherDescription/CurrentWeatherDescription.module.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/DailyWeather/DailyWeather.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/DailyWeather/DailyWeather.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Search/Search.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Search/Search.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/common/Preloader.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/common/Preloader.jsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/redux/actions.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/redux/actions.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/redux/rootReducer.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/redux/rootReducer.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/redux/types.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/redux/types.js" afterDir="false" />
@@ -67,6 +70,26 @@
     <configuration name="Debug Application" type="JavascriptDebugType" uri="http://localhost:3000">
       <method v="2" />
     </configuration>
+    <configuration name="build" type="js.build_tools.npm" temporary="true" nameIsGenerated="true">
+      <package-json value="$PROJECT_DIR$/package.json" />
+      <command value="run" />
+      <scripts>
+        <script value="build" />
+      </scripts>
+      <node-interpreter value="project" />
+      <envs />
+      <method v="2" />
+    </configuration>
+    <configuration name="deploy" type="js.build_tools.npm" temporary="true" nameIsGenerated="true">
+      <package-json value="$PROJECT_DIR$/package.json" />
+      <command value="run" />
+      <scripts>
+        <script value="deploy" />
+      </scripts>
+      <node-interpreter value="project" />
+      <envs />
+      <method v="2" />
+    </configuration>
     <configuration name="npm start" type="js.build_tools.npm">
       <package-json value="$PROJECT_DIR$/package.json" />
       <command value="run" />
@@ -77,6 +100,12 @@
       <envs />
       <method v="2" />
     </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="npm.deploy" />
+        <item itemvalue="npm.build" />
+      </list>
+    </recent_temporary>
   </component>
   <component name="SvnConfiguration">
     <configuration />
@@ -92,7 +121,8 @@
       <workItem from="1591436721246" duration="3866000" />
       <workItem from="1591457239430" duration="11685000" />
       <workItem from="1591521630132" duration="18195000" />
-      <workItem from="1591546168645" duration="7971000" />
+      <workItem from="1591546168645" duration="10661000" />
+      <workItem from="1591605659606" duration="2016000" />
     </task>
     <task id="LOCAL-00001" summary="first commit">
       <created>1591389367581</created>
@@ -122,7 +152,14 @@
       <option name="project" value="LOCAL" />
       <updated>1591551071348</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="add preloader">
+      <created>1591554317029</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1591554317029</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -133,7 +170,9 @@
     <MESSAGE value="added slider" />
     <MESSAGE value="development" />
     <MESSAGE value="pre-final version" />
-    <option name="LAST_COMMIT_MESSAGE" value="pre-final version" />
+    <MESSAGE value="add preloader" />
+    <MESSAGE value="Final version" />
+    <option name="LAST_COMMIT_MESSAGE" value="Final version" />
   </component>
   <component name="WindowStateProjectService">
     <state x="588" y="390" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1591461764633">
@@ -148,26 +187,26 @@
       <screen x="0" y="46" width="1920" height="1034" />
     </state>
     <state x="457" y="221" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.46.1920.1034@0.46.1920.1034" timestamp="1591352728134" />
-    <state x="475" y="236" key="CommitChangelistDialog2" timestamp="1591551069548">
+    <state x="475" y="236" key="CommitChangelistDialog2" timestamp="1591607755499">
       <screen x="0" y="46" width="1920" height="1034" />
     </state>
-    <state x="475" y="236" key="CommitChangelistDialog2/0.46.1920.1034@0.46.1920.1034" timestamp="1591551069548" />
-    <state width="1284" height="178" key="GridCell.Tab.0.bottom" timestamp="1591546175050">
+    <state x="475" y="236" key="CommitChangelistDialog2/0.46.1920.1034@0.46.1920.1034" timestamp="1591607755499" />
+    <state width="1284" height="158" key="GridCell.Tab.0.bottom" timestamp="1591607439982">
       <screen x="0" y="46" width="1920" height="1034" />
     </state>
-    <state width="1284" height="178" key="GridCell.Tab.0.bottom/0.46.1920.1034@0.46.1920.1034" timestamp="1591546175050" />
-    <state width="1284" height="178" key="GridCell.Tab.0.center" timestamp="1591546175050">
+    <state width="1284" height="158" key="GridCell.Tab.0.bottom/0.46.1920.1034@0.46.1920.1034" timestamp="1591607439982" />
+    <state width="1284" height="158" key="GridCell.Tab.0.center" timestamp="1591607439982">
       <screen x="0" y="46" width="1920" height="1034" />
     </state>
-    <state width="1284" height="178" key="GridCell.Tab.0.center/0.46.1920.1034@0.46.1920.1034" timestamp="1591546175050" />
-    <state width="1284" height="178" key="GridCell.Tab.0.left" timestamp="1591546175050">
+    <state width="1284" height="158" key="GridCell.Tab.0.center/0.46.1920.1034@0.46.1920.1034" timestamp="1591607439982" />
+    <state width="1284" height="158" key="GridCell.Tab.0.left" timestamp="1591607439982">
       <screen x="0" y="46" width="1920" height="1034" />
     </state>
-    <state width="1284" height="178" key="GridCell.Tab.0.left/0.46.1920.1034@0.46.1920.1034" timestamp="1591546175050" />
-    <state width="1284" height="178" key="GridCell.Tab.0.right" timestamp="1591546175050">
+    <state width="1284" height="158" key="GridCell.Tab.0.left/0.46.1920.1034@0.46.1920.1034" timestamp="1591607439982" />
+    <state width="1284" height="158" key="GridCell.Tab.0.right" timestamp="1591607439982">
       <screen x="0" y="46" width="1920" height="1034" />
     </state>
-    <state width="1284" height="178" key="GridCell.Tab.0.right/0.46.1920.1034@0.46.1920.1034" timestamp="1591546175050" />
+    <state width="1284" height="158" key="GridCell.Tab.0.right/0.46.1920.1034@0.46.1920.1034" timestamp="1591607439982" />
     <state x="406" y="393" width="606" height="536" key="find.popup" timestamp="1591536629282">
       <screen x="0" y="46" width="1920" height="1034" />
     </state>

@@ -1,9 +1,9 @@
 import React, {useState} from "react";
-import styles from "./Search.module.css"
+import styles from "./Search.module.css";
 import {useDispatch} from "react-redux";
 import {getWeather} from "../../redux/actions";
 
-function Search(props) {
+const Search = () => {
     const dispatch = useDispatch();
     const [formData, setFormData] = useState({
         lat: '',
@@ -25,7 +25,7 @@ function Search(props) {
         let name = e.target.name;
         let value = e.target.value;
         if (name === 'country' && value.length > 2) {
-            setFormData({...formData, error: 'Country code must be 2 character'})
+            setFormData({...formData, error: 'Country code must be 2 character'});
             return
         }
         setFormData({...formData, error: '',[name]: value})
@@ -81,6 +81,6 @@ function Search(props) {
             <button type='submit'>Search</button>
         </form>
     </div>
-}
+};
 
 export default Search

@@ -18,7 +18,7 @@ const HourlyWeather = () => {
     };
 
 
-    if (data.isFetching) return <Preloader />
+    if (data.isFetching) return <Preloader />;
 
     return <Slider {...sliderSetting}>
         {hours}
