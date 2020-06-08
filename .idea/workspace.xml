@@ -1,21 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="a22a5f5a-faee-4f41-b8cf-728d223b5deb" name="Default Changelist" comment="Final version">
+    <list default="true" id="a22a5f5a-faee-4f41-b8cf-728d223b5deb" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/App.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/CurrentWeatherCard/CurrentWeatherCard.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/CurrentWeatherCard/CurrentWeatherCard.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/CurrentWeatherCard/HourlyWeather/HourlyWeather.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/CurrentWeatherCard/HourlyWeather/HourlyWeather.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/CurrentWeatherDescription/CurrentWeatherDescription.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/CurrentWeatherDescription/CurrentWeatherDescription.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/DailyWeather/DailyWeather.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/DailyWeather/DailyWeather.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Search/Search.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Search/Search.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/common/Preloader.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/common/Preloader.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/redux/actions.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/redux/actions.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/redux/rootReducer.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/redux/rootReducer.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/redux/types.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/redux/types.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -122,7 +110,7 @@
       <workItem from="1591457239430" duration="11685000" />
       <workItem from="1591521630132" duration="18195000" />
       <workItem from="1591546168645" duration="10661000" />
-      <workItem from="1591605659606" duration="2016000" />
+      <workItem from="1591605659606" duration="2259000" />
     </task>
     <task id="LOCAL-00001" summary="first commit">
       <created>1591389367581</created>
@@ -159,7 +147,14 @@
       <option name="project" value="LOCAL" />
       <updated>1591554317029</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="Final version">
+      <created>1591607787117</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1591607787117</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -187,10 +182,10 @@
       <screen x="0" y="46" width="1920" height="1034" />
     </state>
     <state x="457" y="221" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.46.1920.1034@0.46.1920.1034" timestamp="1591352728134" />
-    <state x="475" y="236" key="CommitChangelistDialog2" timestamp="1591607755499">
+    <state x="475" y="236" key="CommitChangelistDialog2" timestamp="1591607785442">
       <screen x="0" y="46" width="1920" height="1034" />
     </state>
-    <state x="475" y="236" key="CommitChangelistDialog2/0.46.1920.1034@0.46.1920.1034" timestamp="1591607755499" />
+    <state x="475" y="236" key="CommitChangelistDialog2/0.46.1920.1034@0.46.1920.1034" timestamp="1591607785442" />
     <state width="1284" height="158" key="GridCell.Tab.0.bottom" timestamp="1591607439982">
       <screen x="0" y="46" width="1920" height="1034" />
     </state>
